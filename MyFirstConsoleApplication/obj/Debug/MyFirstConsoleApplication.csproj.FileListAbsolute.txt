@@ -1,0 +1,10 @@
+C:\Users\Pomazals\Source\Repos\CIT365\MyFirstConsoleApplication\obj\Debug\MyFirstConsoleApplication.csproj.AssemblyReference.cache
+C:\Users\Pomazals\Source\Repos\CIT365\MyFirstConsoleApplication\obj\Debug\MyFirstConsoleApplication.csproj.SuggestedBindingRedirects.cache
+C:\Users\Pomazals\Source\Repos\CIT365\MyFirstConsoleApplication\obj\Debug\MyFirstConsoleApplication.Properties.Resources.resources
+C:\Users\Pomazals\Source\Repos\CIT365\MyFirstConsoleApplication\obj\Debug\MyFirstConsoleApplication.csproj.GenerateResource.cache
+C:\Users\Pomazals\Source\Repos\CIT365\MyFirstConsoleApplication\obj\Debug\MyFirstConsoleApplication.csproj.CoreCompileInputs.cache
+C:\Users\Pomazals\Source\Repos\CIT365\MyFirstConsoleApplication\bin\Debug\MyFirstConsoleApplication.exe.config
+C:\Users\Pomazals\Source\Repos\CIT365\MyFirstConsoleApplication\bin\Debug\MyFirstConsoleApplication.exe
+C:\Users\Pomazals\Source\Repos\CIT365\MyFirstConsoleApplication\bin\Debug\MyFirstConsoleApplication.pdb
+C:\Users\Pomazals\Source\Repos\CIT365\MyFirstConsoleApplication\obj\Debug\MyFirstConsoleApplication.exe
+C:\Users\Pomazals\Source\Repos\CIT365\MyFirstConsoleApplication\obj\Debug\MyFirstConsoleApplication.pdb
