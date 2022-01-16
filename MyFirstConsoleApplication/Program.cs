@@ -9,7 +9,7 @@ namespace MyFirstConsoleApplication
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
-        private static void GetUserNameAndLocation(string[] args)
+        private static void GetUserNameAndLocation()
         {
             Person user1 = new Person();
             Console.WriteLine("What is your name?");
@@ -19,7 +19,7 @@ namespace MyFirstConsoleApplication
             Console.WriteLine("I have never been to {0}. I bet it is nice. Press any key to continue...", user1.location);
             Console.ReadKey();
         }
-        private static void ChristmasCountdown(string[] args)
+        private static void ChristmasCountdown()
         {
             DateTime todayDate = DateTime.Now;
             Console.WriteLine("Today's date is:" + todayDate.ToString("MMMM dd, yyyy") + ".");
@@ -34,9 +34,8 @@ namespace MyFirstConsoleApplication
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
-            Program p = New Program();
-            p.GetUsernameAndLocation();
-            p.ChristmasCountdown();
+            Program.GetUserNameAndLocation();
+            Program.ChristmasCountdown();
         }
     }
 }

@@ -1,0 +1,11 @@
+C:\Users\Pomazals\source\repos\CIT365\MathQuizWk2\MathQuizWk2\obj\Debug\MathQuiz.csproj.AssemblyReference.cache
+C:\Users\Pomazals\source\repos\CIT365\MathQuizWk2\MathQuizWk2\obj\Debug\MathQuiz.csproj.SuggestedBindingRedirects.cache
+C:\Users\Pomazals\source\repos\CIT365\MathQuizWk2\MathQuizWk2\obj\Debug\MathQuiz.Form1.resources
+C:\Users\Pomazals\source\repos\CIT365\MathQuizWk2\MathQuizWk2\obj\Debug\MathQuizWk2.Properties.Resources.resources
+C:\Users\Pomazals\source\repos\CIT365\MathQuizWk2\MathQuizWk2\obj\Debug\MathQuiz.csproj.GenerateResource.cache
+C:\Users\Pomazals\source\repos\CIT365\MathQuizWk2\MathQuizWk2\obj\Debug\MathQuiz.csproj.CoreCompileInputs.cache
+C:\Users\Pomazals\source\repos\CIT365\MathQuizWk2\MathQuizWk2\bin\Debug\MathQuizWk2.exe.config
+C:\Users\Pomazals\source\repos\CIT365\MathQuizWk2\MathQuizWk2\bin\Debug\MathQuizWk2.exe
+C:\Users\Pomazals\source\repos\CIT365\MathQuizWk2\MathQuizWk2\bin\Debug\MathQuizWk2.pdb
+C:\Users\Pomazals\source\repos\CIT365\MathQuizWk2\MathQuizWk2\obj\Debug\MathQuizWk2.exe
+C:\Users\Pomazals\source\repos\CIT365\MathQuizWk2\MathQuizWk2\obj\Debug\MathQuizWk2.pdb
