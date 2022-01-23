@@ -10,3 +10,4 @@ C:\Users\Pomazals\source\repos\CIT365\MegaDesk-Pomazal\MegaDesk-Pomazal\obj\Debu
 C:\Users\Pomazals\source\repos\CIT365\MegaDesk-Pomazal\MegaDesk-Pomazal\obj\Debug\MegaDesk-Pomazal.csproj.CoreCompileInputs.cache
 C:\Users\Pomazals\source\repos\CIT365\MegaDesk-Pomazal\MegaDesk-Pomazal\obj\Debug\MegaDesk-Pomazal.exe
 C:\Users\Pomazals\source\repos\CIT365\MegaDesk-Pomazal\MegaDesk-Pomazal\obj\Debug\MegaDesk-Pomazal.pdb
+C:\Users\Pomazals\source\repos\CIT365\MegaDesk-Pomazal\MegaDesk-Pomazal\obj\Debug\MegaDesk_Pomazal.DisplayQuote.resources

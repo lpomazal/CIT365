@@ -35,14 +35,14 @@
             this.label5 = new System.Windows.Forms.Label();
             this.custName = new System.Windows.Forms.TextBox();
             this.deskWidth = new System.Windows.Forms.NumericUpDown();
-            this.deskDepth = new System.Windows.Forms.NumericUpDown();
+            this.deskHeight = new System.Windows.Forms.NumericUpDown();
             this.selectedSurfaceMaterial = new System.Windows.Forms.ComboBox();
             this.numDrawers = new System.Windows.Forms.Label();
             this.numDrawer = new System.Windows.Forms.NumericUpDown();
-            this.rushOptions = new System.Windows.Forms.ComboBox();
+            this.rushAmt = new System.Windows.Forms.ComboBox();
             this.submitQuote = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.deskWidth)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.deskDepth)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.deskHeight)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numDrawer)).BeginInit();
             this.SuspendLayout();
             // 
@@ -85,11 +85,11 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(105, 257);
+            this.label5.Location = new System.Drawing.Point(75, 265);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(66, 13);
+            this.label5.Size = new System.Drawing.Size(156, 13);
             this.label5.TabIndex = 4;
-            this.label5.Text = "Rush Option";
+            this.label5.Text = "Rush Option (14 days standard)";
             // 
             // custName
             // 
@@ -120,23 +120,23 @@
             0,
             0});
             // 
-            // deskDepth
+            // deskHeight
             // 
-            this.deskDepth.Location = new System.Drawing.Point(237, 149);
-            this.deskDepth.Maximum = new decimal(new int[] {
+            this.deskHeight.Location = new System.Drawing.Point(237, 149);
+            this.deskHeight.Maximum = new decimal(new int[] {
             48,
             0,
             0,
             0});
-            this.deskDepth.Minimum = new decimal(new int[] {
+            this.deskHeight.Minimum = new decimal(new int[] {
             12,
             0,
             0,
             0});
-            this.deskDepth.Name = "deskDepth";
-            this.deskDepth.Size = new System.Drawing.Size(120, 20);
-            this.deskDepth.TabIndex = 7;
-            this.deskDepth.Value = new decimal(new int[] {
+            this.deskHeight.Name = "deskHeight";
+            this.deskHeight.Size = new System.Drawing.Size(120, 20);
+            this.deskHeight.TabIndex = 7;
+            this.deskHeight.Value = new decimal(new int[] {
             12,
             0,
             0,
@@ -177,18 +177,18 @@
             this.numDrawer.Size = new System.Drawing.Size(120, 20);
             this.numDrawer.TabIndex = 10;
             // 
-            // rushOptions
+            // rushAmt
             // 
-            this.rushOptions.FormattingEnabled = true;
-            this.rushOptions.Items.AddRange(new object[] {
-            "None (14 days)",
-            "3 Days",
-            "5 Days",
-            "4 Days"});
-            this.rushOptions.Location = new System.Drawing.Point(237, 257);
-            this.rushOptions.Name = "rushOptions";
-            this.rushOptions.Size = new System.Drawing.Size(121, 21);
-            this.rushOptions.TabIndex = 11;
+            this.rushAmt.FormattingEnabled = true;
+            this.rushAmt.Items.AddRange(new object[] {
+            "0",
+            "3 ",
+            "5 ",
+            "7 "});
+            this.rushAmt.Location = new System.Drawing.Point(237, 257);
+            this.rushAmt.Name = "rushAmt";
+            this.rushAmt.Size = new System.Drawing.Size(121, 21);
+            this.rushAmt.TabIndex = 11;
             // 
             // submitQuote
             // 
@@ -206,11 +206,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.submitQuote);
-            this.Controls.Add(this.rushOptions);
+            this.Controls.Add(this.rushAmt);
             this.Controls.Add(this.numDrawer);
             this.Controls.Add(this.numDrawers);
             this.Controls.Add(this.selectedSurfaceMaterial);
-            this.Controls.Add(this.deskDepth);
+            this.Controls.Add(this.deskHeight);
             this.Controls.Add(this.deskWidth);
             this.Controls.Add(this.custName);
             this.Controls.Add(this.label5);
@@ -223,7 +223,7 @@
             this.Name = "AddQuote";
             this.Text = "AddQuote";
             ((System.ComponentModel.ISupportInitialize)(this.deskWidth)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.deskDepth)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.deskHeight)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numDrawer)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -237,13 +237,13 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox custName;
-        private System.Windows.Forms.NumericUpDown deskWidth;
-        private System.Windows.Forms.NumericUpDown deskDepth;
-        private System.Windows.Forms.ComboBox selectedSurfaceMaterial;
+        private System.Windows.Forms.NumericUpDown deskHeight;
         private System.Windows.Forms.Label numDrawers;
-        private System.Windows.Forms.NumericUpDown numDrawer;
-        private System.Windows.Forms.ComboBox rushOptions;
         private System.Windows.Forms.Button submitQuote;
+        public System.Windows.Forms.TextBox custName;
+        public System.Windows.Forms.NumericUpDown deskWidth;
+        public System.Windows.Forms.ComboBox selectedSurfaceMaterial;
+        public System.Windows.Forms.NumericUpDown numDrawer;
+        public System.Windows.Forms.ComboBox rushAmt;
     }
 }

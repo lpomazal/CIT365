@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace MegaDesk_Pomazal
 {
-    namespace ShippingCost
-    {
+   
         internal class DeskQuote
         {
             private int rushAmt;
@@ -72,4 +71,3 @@ namespace MegaDesk_Pomazal
 
         }
     }
-}
