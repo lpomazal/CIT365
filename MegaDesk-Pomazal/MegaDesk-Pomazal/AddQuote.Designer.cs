@@ -36,7 +36,7 @@
             this.custName = new System.Windows.Forms.TextBox();
             this.deskWidth = new System.Windows.Forms.NumericUpDown();
             this.deskDepth = new System.Windows.Forms.NumericUpDown();
-            this.surfaceMaterial = new System.Windows.Forms.ComboBox();
+            this.selectedSurfaceMaterial = new System.Windows.Forms.ComboBox();
             this.numDrawers = new System.Windows.Forms.Label();
             this.numDrawer = new System.Windows.Forms.NumericUpDown();
             this.rushOptions = new System.Windows.Forms.ComboBox();
@@ -119,7 +119,6 @@
             0,
             0,
             0});
-         
             // 
             // deskDepth
             // 
@@ -143,19 +142,19 @@
             0,
             0});
             // 
-            // surfaceMaterial
+            // selectedSurfaceMaterial
             // 
-            this.surfaceMaterial.FormattingEnabled = true;
-            this.surfaceMaterial.Items.AddRange(new object[] {
+            this.selectedSurfaceMaterial.FormattingEnabled = true;
+            this.selectedSurfaceMaterial.Items.AddRange(new object[] {
             "laminate",
             "oak",
             "rosewood",
             "veneer",
             "pine"});
-            this.surfaceMaterial.Location = new System.Drawing.Point(237, 180);
-            this.surfaceMaterial.Name = "surfaceMaterial";
-            this.surfaceMaterial.Size = new System.Drawing.Size(121, 21);
-            this.surfaceMaterial.TabIndex = 8;
+            this.selectedSurfaceMaterial.Location = new System.Drawing.Point(237, 180);
+            this.selectedSurfaceMaterial.Name = "selectedSurfaceMaterial";
+            this.selectedSurfaceMaterial.Size = new System.Drawing.Size(121, 21);
+            this.selectedSurfaceMaterial.TabIndex = 8;
             // 
             // numDrawers
             // 
@@ -210,7 +209,7 @@
             this.Controls.Add(this.rushOptions);
             this.Controls.Add(this.numDrawer);
             this.Controls.Add(this.numDrawers);
-            this.Controls.Add(this.surfaceMaterial);
+            this.Controls.Add(this.selectedSurfaceMaterial);
             this.Controls.Add(this.deskDepth);
             this.Controls.Add(this.deskWidth);
             this.Controls.Add(this.custName);
@@ -241,7 +240,7 @@
         private System.Windows.Forms.TextBox custName;
         private System.Windows.Forms.NumericUpDown deskWidth;
         private System.Windows.Forms.NumericUpDown deskDepth;
-        private System.Windows.Forms.ComboBox surfaceMaterial;
+        private System.Windows.Forms.ComboBox selectedSurfaceMaterial;
         private System.Windows.Forms.Label numDrawers;
         private System.Windows.Forms.NumericUpDown numDrawer;
         private System.Windows.Forms.ComboBox rushOptions;

@@ -20,6 +20,7 @@ namespace MegaDesk_Pomazal
         private void submitQuote_Click(object sender, EventArgs e)
         {
             var submitQuote = new DisplayQuote();
+
             submitQuote.Tag = this;
             Hide();
         }

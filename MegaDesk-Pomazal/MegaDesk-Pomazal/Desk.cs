@@ -12,8 +12,14 @@ namespace MegaDesk_Pomazal
         public int deskHeight { get; set;}
         public int numDrawers { get; set; }
         public string custName { get; set; }
-        public int surfaceArea { get; set; }
+        public int surfaceArea { 
+            get { 
+                return deskHeight * deskWidth; 
+            } 
+        }
         public string customerName { get; internal set; }
+
+        public surfaceMaterial selectedSurfaceMaterial { get; set; }
 
         public enum surfaceMaterial
         {
