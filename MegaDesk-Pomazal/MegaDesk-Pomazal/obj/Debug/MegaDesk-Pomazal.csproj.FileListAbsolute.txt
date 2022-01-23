@@ -1,0 +1,12 @@
+C:\Users\Pomazals\source\repos\CIT365\MegaDesk-Pomazal\MegaDesk-Pomazal\bin\Debug\MegaDesk-Pomazal.exe.config
+C:\Users\Pomazals\source\repos\CIT365\MegaDesk-Pomazal\MegaDesk-Pomazal\bin\Debug\MegaDesk-Pomazal.exe
+C:\Users\Pomazals\source\repos\CIT365\MegaDesk-Pomazal\MegaDesk-Pomazal\bin\Debug\MegaDesk-Pomazal.pdb
+C:\Users\Pomazals\source\repos\CIT365\MegaDesk-Pomazal\MegaDesk-Pomazal\obj\Debug\MegaDesk-Pomazal.csproj.AssemblyReference.cache
+C:\Users\Pomazals\source\repos\CIT365\MegaDesk-Pomazal\MegaDesk-Pomazal\obj\Debug\MegaDesk-Pomazal.csproj.SuggestedBindingRedirects.cache
+C:\Users\Pomazals\source\repos\CIT365\MegaDesk-Pomazal\MegaDesk-Pomazal\obj\Debug\MegaDesk_Pomazal.AddQuote.resources
+C:\Users\Pomazals\source\repos\CIT365\MegaDesk-Pomazal\MegaDesk-Pomazal\obj\Debug\MegaDesk_Pomazal.MainMenu.resources
+C:\Users\Pomazals\source\repos\CIT365\MegaDesk-Pomazal\MegaDesk-Pomazal\obj\Debug\MegaDesk_Pomazal.Properties.Resources.resources
+C:\Users\Pomazals\source\repos\CIT365\MegaDesk-Pomazal\MegaDesk-Pomazal\obj\Debug\MegaDesk-Pomazal.csproj.GenerateResource.cache
+C:\Users\Pomazals\source\repos\CIT365\MegaDesk-Pomazal\MegaDesk-Pomazal\obj\Debug\MegaDesk-Pomazal.csproj.CoreCompileInputs.cache
+C:\Users\Pomazals\source\repos\CIT365\MegaDesk-Pomazal\MegaDesk-Pomazal\obj\Debug\MegaDesk-Pomazal.exe
+C:\Users\Pomazals\source\repos\CIT365\MegaDesk-Pomazal\MegaDesk-Pomazal\obj\Debug\MegaDesk-Pomazal.pdb
