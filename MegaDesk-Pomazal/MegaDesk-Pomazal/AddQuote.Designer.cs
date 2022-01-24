@@ -99,7 +99,6 @@ namespace MegaDesk_Pomazal
             this.custName.Name = "custName";
             this.custName.Size = new System.Drawing.Size(146, 20);
             this.custName.TabIndex = 5;
-            this.custName.TextChanged += new System.EventHandler(this.custName_TextChanged);
             // 
             // deskWidth
             // 
@@ -144,22 +143,20 @@ namespace MegaDesk_Pomazal
             0,
             0,
             0});
-            this.deskHeight.ValueChanged += new System.EventHandler(this.deskHeight_ValueChanged);
             // 
             // selectedSurfaceMaterial
             // 
             this.selectedSurfaceMaterial.FormattingEnabled = true;
             this.selectedSurfaceMaterial.Items.AddRange(new object[] {
-            "laminate",
-            "oak",
-            "rosewood",
-            "veneer",
-            "pine"});
+            "Laminate",
+            "Oak",
+            "Rosewood",
+            "Veneer",
+            "Pine"});
             this.selectedSurfaceMaterial.Location = new System.Drawing.Point(237, 180);
             this.selectedSurfaceMaterial.Name = "selectedSurfaceMaterial";
             this.selectedSurfaceMaterial.Size = new System.Drawing.Size(121, 21);
             this.selectedSurfaceMaterial.TabIndex = 8;
-            this.selectedSurfaceMaterial.SelectedIndexChanged += new System.EventHandler(this.selectedSurfaceMaterial_SelectedIndexChanged);
             // 
             // numDrawers
             // 
@@ -181,7 +178,6 @@ namespace MegaDesk_Pomazal
             this.numDrawer.Name = "numDrawer";
             this.numDrawer.Size = new System.Drawing.Size(120, 20);
             this.numDrawer.TabIndex = 10;
-            this.numDrawer.ValueChanged += new System.EventHandler(this.numDrawer_ValueChanged);
             // 
             // rushAmt
             // 
@@ -195,7 +191,6 @@ namespace MegaDesk_Pomazal
             this.rushAmt.Name = "rushAmt";
             this.rushAmt.Size = new System.Drawing.Size(121, 21);
             this.rushAmt.TabIndex = 11;
-            this.rushAmt.SelectedIndexChanged += new System.EventHandler(this.rushAmt_SelectedIndexChanged);
             // 
             // submitQuote
             // 
@@ -252,6 +247,5 @@ namespace MegaDesk_Pomazal
         public System.Windows.Forms.ComboBox selectedSurfaceMaterial;
         public System.Windows.Forms.NumericUpDown numDrawer;
         public System.Windows.Forms.ComboBox rushAmt;
-        private EventHandler deskWidth_ValueChanged;
     }
 }

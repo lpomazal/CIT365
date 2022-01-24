@@ -18,47 +18,32 @@ namespace MegaDesk_Pomazal
         {
             InitializeComponent();
             desk = new Desk();
+            desk.deskWidth = (int)deskWidth.Value;
+            desk.deskHeight = (int) deskHeight.Value;
         }
 
         private void submitQuote_Click(object sender, EventArgs e)
         {
+            desk.numDrawers = (int)numDrawer.Value;
+            if (Enum.TryParse<Desk.surfaceMaterial>(selectedSurfaceMaterial.SelectedItem?.ToString(), out var selectedMaterial))
+                desk.selectedSurfaceMaterial = selectedMaterial;
+            desk.deskHeight = (int)deskHeight.Value;
+            desk.custName = (string)custName.Text;
+            desk.deskWidth = (int)deskWidth.Value;
             var submitQuote = new DisplayQuote();
-            DeskQuote dq = new DeskQuote(desk, rushAmt.SelectedIndex);
-            submitQuote.quoteResult.Text = dq.calQuoteCost().ToString();
+            int.TryParse(rushAmt.SelectedItem?.ToString(), out var rushAmtV);
+            DeskQuote dq = new DeskQuote(desk, rushAmtV);
+            var dqr = dq.CalQuoteCost();
+            submitQuote.totalQuoteCost.Text = dqr.quoteAmount?.ToString("C");
+            submitQuote.custNameQuote.Text = dqr.desk.custName;
+            submitQuote.selectedMaterialQuote.Text = Enum.GetName(typeof(Desk.surfaceMaterial), dqr.desk.selectedSurfaceMaterial);
+            submitQuote.drawerNumQuote.Text = dqr.desk.numDrawers?.ToString();
+            submitQuote.heightQuote.Text = dqr.desk.deskHeight?.ToString();
+            submitQuote.widthQuote.Text = dqr.desk.deskWidth?.ToString();
             submitQuote.Tag = this;
             this.Hide();
             submitQuote.ShowDialog();
             this.Close();
-        }
-
-        private void DeskWidth_ValueChanged(object sender, EventArgs e)
-        { 
-            desk.deskWidth = (int)deskWidth.Value;
-        }
-
-        private void custName_TextChanged(object sender, EventArgs e)
-        {
-            desk.customerName = (string)custName.Text;
-        }
-
-        private void deskHeight_ValueChanged(object sender, EventArgs e)
-        {
-            desk.deskHeight = (int)deskHeight.Value;
-        }
-
-        private void selectedSurfaceMaterial_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            desk.selectedSurfaceMaterial = (Desk.surfaceMaterial)selectedSurfaceMaterial.SelectedIndex;
-        }
-
-        private void numDrawer_ValueChanged(object sender, EventArgs e)
-        {
-            desk.numDrawers = (int)numDrawer.Value;
-        }
-
-        private void rushAmt_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            DeskQuote.rushAmt = (int)rushAmt.SelectedValue;
         }
     }
 }

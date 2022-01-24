@@ -3,33 +3,41 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace MegaDesk_Pomazal
 {
    
         internal class DeskQuote
         {
-            public static int rushAmt;
+            private int rushAmt;
             private Desk desk;
             private const int basePrice = 200;
             private const int surfaceAreaMin = 1000;
-            //cost per area charges extra after 1000sqInch
             private const int costPerDrawer = 50;
             private const int costPerArea = 1;
-            private int surfaceArea;
-            //area over charge for inches over surfaceAreaMin
+            private int? surfaceArea;
 
-            public DeskQuote(Desk desk, int shippingDays)
+
+        public DeskQuote(Desk desk, int shippingDays)
             {
                 this.desk = desk;
                 surfaceArea = desk.deskWidth * desk.deskHeight;
+                rushAmt = shippingDays;
             }
-            public int calQuoteCost()
+
+        public DeskQuote(Desk desk)
+        {
+            this.desk = desk;
+        }
+
+        public DeskQuoteResult CalQuoteCost()
             {
-                var quoteAmount = basePrice + areaCost() + drawerCost() + TotalRushCost(rushAmt, surfaceArea) + (int)desk.selectedSurfaceMaterial;
-                return quoteAmount;
+                var quoteAmount = basePrice + AreaCost() + DrawerCost() + TotalRushCost(rushAmt, surfaceArea??0) + (int)desk.selectedSurfaceMaterial;
+            return new DeskQuoteResult {quoteAmount = quoteAmount, desk = desk, rushAmt = rushAmt };
+                
             }
-            private int areaCost()
+            private int? AreaCost()
             {
                 if (surfaceArea > surfaceAreaMin)
                 {
@@ -41,9 +49,9 @@ namespace MegaDesk_Pomazal
                 }
 
             }
-            private int drawerCost()
+            private int? DrawerCost()
             {
-                int drawerCost = desk.numDrawers * costPerDrawer;
+                var drawerCost = desk.numDrawers * costPerDrawer;
                 return drawerCost;
             }
             private int TotalRushCost(int rushAmt, int surfaceArea)
@@ -68,6 +76,11 @@ namespace MegaDesk_Pomazal
                 }
 
             }
-
+        public class DeskQuoteResult
+        {
+            public Desk desk;
+            public int? quoteAmount { get; set; }
+            public int rushAmt { get; set; }
+        }
         }
     }
