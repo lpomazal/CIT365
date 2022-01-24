@@ -9,7 +9,7 @@ namespace MegaDesk_Pomazal
    
         internal class DeskQuote
         {
-            private int rushAmt;
+            public static int rushAmt;
             private Desk desk;
             private const int basePrice = 200;
             private const int surfaceAreaMin = 1000;
