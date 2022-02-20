@@ -1,0 +1,73 @@
+﻿@page
+@model MyScriptureApp.Pages.Scriptures.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>My Scripture Journal</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<form>
+    <p> Filter by Book:
+        <select asp-for="ScriptureBook" asp-items="Model.Books">
+        <option value="">All<br></option>
+        </select>
+        <br><br>Search: <input type="text" asp-for="SearchString" />
+        <input type="submit" value="Filter" />
+    </p>
+</form>
+<table class="table table-border table-hover">
+    <thead>
+        <tr>      
+            <th scope="col">
+                <a asp-page="./Index" asp-route-sortOrder="@Model.BookSort" asp-page-handler="Sort">
+                    @Html.DisplayNameFor(model => model.Entry[0].Book)
+                </a>
+            </th>
+            <th scope="col">               
+                @Html.DisplayNameFor(model => model.Entry[0].Chapter)                
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Entry[0].Verse)
+            </th>
+            <th scope="col">
+                <a asp-page="./Index" asp-route-sortOrder="@Model.DateSort" asp-page-handler="Sort">
+                @Html.DisplayNameFor(model => model.Entry[0].EntryDate)
+                </a>
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.Entry[0].Thoughts)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Entry) {
+        <tr>
+            <th scope="row">
+                @Html.DisplayFor(modelItem => item.Book)
+            </th>
+            <th scope="row">
+                @Html.DisplayFor(modelItem => item.Chapter)
+            </th>
+            <th scope="row">
+                @Html.DisplayFor(modelItem => item.Verse)
+            </th>
+            <th scope="row">
+                @Html.DisplayFor(modelItem => item.EntryDate)
+            </th>
+            <th scope="row">
+                @Html.DisplayFor(modelItem => item.Thoughts)
+            </th>
+            <th scope="row">
+                <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+            </th>
+        </tr>
+}
+    </tbody>
+</table>

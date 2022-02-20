@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyScriptureApp", "MyScriptureApp.csproj", "{CD0E7A3F-061B-4B26-9CA3-EC11696D3135}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CD0E7A3F-061B-4B26-9CA3-EC11696D3135}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD0E7A3F-061B-4B26-9CA3-EC11696D3135}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD0E7A3F-061B-4B26-9CA3-EC11696D3135}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD0E7A3F-061B-4B26-9CA3-EC11696D3135}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BDE1F0B2-EFD0-4A28-A89B-AF37DB18291F}
+	EndGlobalSection
+EndGlobal
