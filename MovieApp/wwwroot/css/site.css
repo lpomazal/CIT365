@@ -1,0 +1,77 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #080742;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #F67280;
+    border-color: #355C7D;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #C06C84;
+    border-color: #6C5B7B;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    font-size: 14px;
+    background-color: #F8B195;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+    border-top: 1px solid #355C7D;
+}
+.border-bottom {
+    border-bottom: 1px solid #355C7D;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+    background-color: #F8B195;
+    
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    align-content: center;
+    background-color: #F8B195;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    background-color: #C06C84;
+    line-height: 60px; /* Vertically center the text there */
+}
